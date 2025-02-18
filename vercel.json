@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/blog",
-      "destination": "http://localhost:3001/blog"
+      "destination": "https://app-b-gules.vercel.app/blog"
     },
     {
       "source": "/blog/:path*",
-      "destination": "${process.env.BLOG_URL}/blog/:path*"
+      "destination": "https://app-b-gules.vercel.app/blog/:path*"
     }
   ],
   "headers": [

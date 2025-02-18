@@ -13,7 +13,7 @@ export default function Home() {
           <Link href="/about" className="text-blue-500 hover:underline">
             About
           </Link>
-          <a href={`${process.env.NEXT_PUBLIC_BLOG_URL}/blog`} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+          <a href={`${process.env.NEXT_PUBLIC_BLOG_URL}/blog`} className="text-blue-500 hover:underline">
             Blog Home
           </a>
         </div>
@@ -21,10 +21,10 @@ export default function Home() {
         <div className="mt-4">
           <h2 className="text-xl font-semibold mb-2">Latest Blog Posts:</h2>
           <div className="space-x-4">
-            <a href={`${process.env.NEXT_PUBLIC_BLOG_URL}/blog/posts/post-1`} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            <a href={`${process.env.NEXT_PUBLIC_BLOG_URL}/blog/posts/post-1`} className="text-blue-500 hover:underline">
               Post 1
             </a>
-            <a href={`${process.env.NEXT_PUBLIC_BLOG_URL}/blog/posts/post-2`} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            <a href={`${process.env.NEXT_PUBLIC_BLOG_URL}/blog/posts/post-2`} className="text-blue-500 hover:underline">
               Post 2
             </a>
           </div>
