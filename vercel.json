@@ -1,0 +1,22 @@
+{
+  "rewrites": [
+    {
+      "source": "/blog",
+      "destination": "https://v0-next-js-multi-zones-yo3btw.vercel.app/blog"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://v0-next-js-multi-zones-yo3btw.vercel.app/blog/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/blog/:path*",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET" }
+      ]
+    }
+  ]
+}
+
