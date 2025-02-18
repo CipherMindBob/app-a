@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/blog",
-      "destination": "https://v0-next-js-multi-zones-yo3btw.vercel.app/blog"
+      "destination": "http://localhost:3001/blog"
     },
     {
       "source": "/blog/:path*",
-      "destination": "https://v0-next-js-multi-zones-yo3btw.vercel.app/blog/:path*"
+      "destination": "${process.env.BLOG_URL}/blog/:path*"
     }
   ],
   "headers": [
@@ -14,7 +14,8 @@
       "source": "/blog/:path*",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "GET" }
+        { "key": "Access-Control-Allow-Methods", "value": "GET" },
+        { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" }
       ]
     }
   ]
